@@ -14,8 +14,9 @@ public class Main {
         // 입력 받기
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
-        }
-
+        } 
+        // 에러좀 고치란 말이야
+        
         // 버블 정렬 - 오름차순
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -32,7 +33,7 @@ public class Main {
             System.out.println(arr[i]);
         }
 
-
+        // 수정1
         
 
 
