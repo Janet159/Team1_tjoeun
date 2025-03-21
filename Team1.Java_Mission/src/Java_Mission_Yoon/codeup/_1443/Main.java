@@ -1,3 +1,5 @@
+package Java_Mission_Yoon.codeup._1443;
+
 import java.util.Scanner;
 
 public class Main {
