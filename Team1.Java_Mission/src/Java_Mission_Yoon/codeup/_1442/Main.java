@@ -1,3 +1,5 @@
+package Java_Mission_Yoon.codeup._1442;
+
 import java.util.Scanner;
 
 public class Main {
@@ -33,7 +35,7 @@ public class Main {
 
         sc.close();
 
-
+//        수정2
     }
 
 }
