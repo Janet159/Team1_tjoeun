@@ -2,38 +2,36 @@ package Java_Mission_Yoon.ClassRoom._10_Shape;
 
 public class Trapezoid {
 
-	private int N1, N2, height;
-	
+	private int top, bottom, height;
+
 	public Trapezoid() {
-		
 	}
 
-	public Trapezoid(int n1, int n2, int height) {
-		N1 = n1;
-		N2 = n2;
+	public Trapezoid(int top, int bottom, int height) {
+		this.top = top;
+		this.bottom = bottom;
 		this.height = height;
 	}
 	
 	public double Area() {
-		double s = (N1+N2)/height;
-		
+		double s = (top + bottom)*height/2;
 		return s;
 	}
 
-	public int getN1() {
-		return N1;
+	public int getTop() {
+		return top;
 	}
 
-	public void setN1(int n1) {
-		N1 = n1;
+	public void setTop(int top) {
+		this.top = top;
 	}
 
-	public int getN2() {
-		return N2;
+	public int getBottom() {
+		return bottom;
 	}
 
-	public void setN2(int n2) {
-		N2 = n2;
+	public void setBottom(int bottom) {
+		this.bottom = bottom;
 	}
 
 	public int getHeight() {
@@ -43,13 +41,6 @@ public class Trapezoid {
 	public void setHeight(int height) {
 		this.height = height;
 	}
-
-	@Override
-	public String toString() {
-		return "Trapezoid [N1=" + N1 + ", N2=" + N2 + ", height=" + height + "]";
-	}
-	
-	
 	
 	
 	

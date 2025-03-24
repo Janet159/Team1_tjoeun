@@ -12,5 +12,6 @@ public class FigureTest {
 		System.out.println("사각형의 넓이 : " + ractangle.Area());
 		System.out.println("원형의 넓이 : " + circle.Area());
 		System.out.println("사다리꼴의 넓이 : " + trapezoid.Area());
+
 	}
 }

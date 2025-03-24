@@ -2,7 +2,7 @@ package Java_Mission_Yoon.ClassRoom._10_Shape;
 
 public class Circle {
 
-	private double radius, PI;
+	private double radius;
 	
 	
 	public Circle() {
@@ -13,8 +13,7 @@ public class Circle {
 	}
 	
 	public double Area() {
-		PI = Math.PI;
-		double s = PI*Math.pow(radius, 2);
+		double s = Math.PI*Math.pow(radius, 2);
 		
 		return s;
 	}
@@ -27,18 +26,13 @@ public class Circle {
 		this.radius = radius;
 	}
 
-	public double getPI() {
-		return PI;
-	}
-
-	public void setPI(double pI) {
-		PI = pI;
-	}
-
 	@Override
 	public String toString() {
-		return "Circle [radius=" + radius + ", PI=" + PI + "]";
+		return "Circle [radius=" + radius + "]";
 	}
+
+
+
 	
 	
 	

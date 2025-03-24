@@ -11,6 +11,9 @@ public class _06_Lotto {
 		// 1~45 숫자 생성
 		Random random = new Random();
 		
+		// 1차원 배열
+		int[] arr = new int[6];
+		
 		// N 게임 수
 		int N = sc.nextInt();
 		
@@ -21,10 +24,10 @@ public class _06_Lotto {
 		for (int i = 1; i <= N; i++) {
 			System.out.print("[" + i + " 게임] : "  ) ;
 			
-			// 숫자 6개 뽑기
+			// 숫자 6개 뽑기 및 배열에 넣기
 			for (int j = 0; j < 6; j++) {
-				num = random.nextInt(45);
-				System.out.print(num + " ");
+				arr[i] = random.nextInt(45);
+				System.out.print(arr[i] + " ");
 			}
 			System.out.println();
 		}
