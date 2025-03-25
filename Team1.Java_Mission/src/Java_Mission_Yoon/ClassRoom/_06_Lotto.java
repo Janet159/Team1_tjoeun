@@ -17,17 +17,35 @@ public class _06_Lotto {
 		// N 게임 수
 		int N = sc.nextInt();
 		
-		int num;
 		
-		// N 개 판수 생성
-		
+		// N 개 판수 생성 (열)
 		for (int i = 1; i <= N; i++) {
 			System.out.print("[" + i + " 게임] : "  ) ;
 			
-			// 숫자 6개 뽑기 및 배열에 넣기
+			// 숫자 6개 뽑기 및 배열에 넣기(행)
 			for (int j = 0; j < 6; j++) {
-				arr[i] = random.nextInt(45);
-				System.out.print(arr[i] + " ");
+				arr[j] = random.nextInt(45)+1;
+				
+				// 중복 제거
+		        // 버블 정렬 - 오름차순
+		        for (int i1 = 0; i1 < 6; i1++) {
+		        	// 오름차순
+		            for (int j1 = 0; j1 < 6 - i1 - 1; j1++) {
+		                if (arr[j1] >= arr[j1 + 1]) {
+		                    int temp = arr[j1];
+		                    arr[j1] = arr[j1 + 1];
+		                    arr[j1 + 1] = temp;
+		                } 
+		                // 중복 제거 
+		                else if (arr[j1] == arr[j1+1]) {
+		                	j--;
+		                }
+		            }
+		            
+		            
+		        }				
+				
+				System.out.print(arr[j] + " ");
 			}
 			System.out.println();
 		}
