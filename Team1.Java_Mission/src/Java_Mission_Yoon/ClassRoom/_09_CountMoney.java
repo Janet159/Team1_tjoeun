@@ -30,8 +30,8 @@ public class _09_CountMoney {
 		//TODO
 		// 돈 계산
 		for (int i = 0; i < SnackMonsey.length; i++) {
+			temp = SnackMonsey[i];
 			for (int j = 0; j < MoneyStandard.length; j++) {
-				temp = SnackMonsey[j];
 				RestMoney[i][j] = temp/MoneyStandard[j];
 				temp = SnackMonsey[j]%MoneyStandard[j];
 				
