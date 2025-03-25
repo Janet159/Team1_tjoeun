@@ -13,7 +13,7 @@ public class Trapezoid {
 		this.height = height;
 	}
 	
-	public double Area() {
+	public double getArea() {
 		double s = (top + bottom)*height/2;
 		return s;
 	}

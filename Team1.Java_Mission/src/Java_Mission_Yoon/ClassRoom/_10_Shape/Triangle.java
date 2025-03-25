@@ -18,7 +18,7 @@ public class Triangle {
 	
 	
 	// 넓이 구하는 식
-	public double Area() {
+	public double getArea() {
 		double s = height*width/2;
 		
 		return s;

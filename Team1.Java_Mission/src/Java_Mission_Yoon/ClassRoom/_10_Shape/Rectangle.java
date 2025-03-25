@@ -12,7 +12,7 @@ public class Rectangle {
 		this.width = width;
 	}
 	
-	public double Area() {
+	public double getArea() {
 		double s = height*width;
 		
 		return s;
