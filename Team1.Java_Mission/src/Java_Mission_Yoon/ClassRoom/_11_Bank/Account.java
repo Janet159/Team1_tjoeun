@@ -42,6 +42,13 @@ public class Account {
 	}
 
 	public void setAccountMoney(int accountMoney) {
+		if( accountMoney < 0 )
+			{System.out.println("출금 금액이 잔고 보다 많습니다.");}
+		else if (accountMoney >1000000 )
+			{System.out.println("최대 송금 금액을 넘었습니다."); }
+		else if (accountMoney > 1000000000)
+			{System.out.println("최대 예금액을 넘었습니다.");}
+		else
 		this.accountMoney = accountMoney;
 	}
 
