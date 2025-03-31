@@ -83,7 +83,6 @@ public class _13_Lotto {
 			System.out.print("[" + (i+1) + " 게임] (1.자동 / 2.수동) :");
 			int Choice =sc.nextInt();
 			if (Choice == 1) {
-				lottoList.add();
 				lottoList.add(lottoNeed.randomNum());
 				System.out.println();
 			}
@@ -154,13 +153,13 @@ public class _13_Lotto {
         System.out.println("지급일\t:" + nextMonday.format(formatter)+"\t(월)");
 
         System.out.println("-----------------------------------------");
-        for (int i = 0; i < N; i++) {
-			System.out.println((char) (65+i));
-			if(Chic)
-			
-			
-			
-		}
+//        for (int i = 0; i < N; i++) {
+//			System.out.println((char) (65+i));
+//			if(Chic)
+//			
+//			
+//			
+//		}
         
 	}
 	
